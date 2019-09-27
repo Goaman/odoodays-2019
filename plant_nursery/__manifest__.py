@@ -16,6 +16,7 @@
         'views/nursery_plant_quote_ask.xml',
         'views/assets.xml',
         'views/nursery_order_portal_templates.xml',
+        'views/snippets.xml',
         'data/ir_sequence_data.xml',
         'data/mail_template_data.xml',
         'data/plant_data.xml',

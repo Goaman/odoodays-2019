@@ -1,0 +1,16 @@
+<templates id="template" xml:space="preserve">
+    <t t-name="plant_nursery.promo_plants">
+        <t t-foreach="plantsInPromo" t-as="plant">
+            <div class="col-md-4">
+                <img t-attf-src="data:image/png;base64, #{plant.image}" width="140" height="140"
+                    style="border-radius: 50%; border: 1px solid #a8a8a8"/>
+                <h4><t t-esc="plant.name"/></h4>
+                <h4><span class="label label-success"><t t-esc="plant.price"/>€</span></h4>
+                <t t-raw="plant.description"/>
+                <p class="mt8">
+                    <a class="btn btn-primary" t-attf-href="/plant/#{plant.id}">View details</a>
+                </p>
+            </div>
+        </t>
+    </t>
+</templates>

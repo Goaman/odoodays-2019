@@ -3,6 +3,13 @@
     <template id="assets_frontend" inherit_id="web.assets_frontend" name="Plant Assets">
         <xpath expr="//script[last()]" position="after">
             <script type="text/javascript" src="/plant_nursery/static/src/js/quote_ask.js"></script>
+            <script type="text/javascript" src="/plant_nursery/static/src/js/snippets.animation.js"></script>
+        </xpath>
+    </template>
+    <!-- Only load the editor code in the website editors assets -->
+    <template id="assets_editor" inherit_id="website.assets_editor" name="Plant Editor Assets">
+        <xpath expr="//script[last()]" position="after">
+            <script type="text/javascript" src="/plant_nursery/static/src/js/snippets.editor.js"></script>
         </xpath>
     </template>
 </odoo>
